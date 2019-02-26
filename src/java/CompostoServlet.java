@@ -57,7 +57,7 @@ public class CompostoServlet extends HttpServlet {
                         
                         out.println("<tr>");
                         out.println("<th>Parcela " + i + "</th>");
-                        calculo = pc *(Math.pow(1+juros,i));
+                        calculo = valor *(Math.pow(1+juros,i));
                         out.println("<td>Valor: " + calculo + "</td>");
                         out.println("</tr>");
                         soma=soma+calculo;
