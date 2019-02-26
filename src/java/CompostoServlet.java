@@ -49,9 +49,9 @@ public class CompostoServlet extends HttpServlet {
                     double valor = Double.parseDouble(request.getParameter("valor"));
                     double parcela = Double.parseDouble(request.getParameter("parcela"));
                     double juros = (Double.parseDouble(request.getParameter("juros"))/100);                
-                    double pc = valor/parcela;
+                    double calculo = 0;
                     double soma = 0;
-                    double calculo = pc;
+                    
                     out.println("<table>");
                     for (double i=1;i<=parcela;i++){
                         
